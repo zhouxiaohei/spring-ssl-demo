@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: demo-service
+  profiles:
+    active: uat
+  swagger:
+    package: com.zhou.demo.ssl.controller
+
+server:
+  port: 11001
+  ssl:
+    key-store: classpath:server.jks
+    key-store-password: 123456
+    key-store-type: jks
+    key-password: 123456
+    ## 开启双向验证
+    trust-store: classpath:server.jks
+    trust-store-password: 123456
+    trust-store-type: jks
+    client-auth: need
