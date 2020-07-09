@@ -221,6 +221,6 @@ public class OkhttpUtils {
 
         // 双向验证
         //testTwoWayHttps();
-        testTwoWayHttpsJks();
+        //testTwoWayHttpsJks();
     }
 }
